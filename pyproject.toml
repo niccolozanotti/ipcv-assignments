@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+
+[project]
+name = "ipcv-project"
+version = "0.1.0"
+description = "Image Processing and Computer Vision assignments."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.4.2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "nbstripout>=0.8.2",
+    "ruff>=0.14.10",
+    "zizmor>=1.20.0",
+]
+assignment1 = [
+]
+assignment2 = [
+]

@@ -1,0 +1,18 @@
+[format]
+docstring-code-format = false
+
+[lint]
+# See https://docs.astral.sh/ruff/rules for full details of each ruleset.
+select = [
+    "PL", "I", "E", "NPY", "FLY", "RUF",
+    "ARG", "SLF", "S", "BLE", "B", "A", "C4", "EM", "ICN", "PIE", "Q", "RSE",
+    "SIM", "TID"
+]
+
+# Ignore SIM108 (use ternary instead of if-else) as it can arguably obscure intent.
+# Ignore RUF002 (ambiguous characters) as it does not allow apostrophes in strings.
+ignore = ["SIM108", "RUF002"]
+
+[lint.per-file-ignores]
+"*/__init__.py" = ["D104"] # Allow missing docstring for module
+"*.ipynb" = ["I002"]       # Missing required import (allows imports anywhere)
