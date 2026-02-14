@@ -23,4 +23,11 @@ dev = [
 assignment1 = [
 ]
 assignment2 = [
+    "graphviz>=0.21",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.2",
+    "pandas>=3.0.0",
+    "torch>=2.10.0",
+    "torchvision>=0.25.0",
 ]
