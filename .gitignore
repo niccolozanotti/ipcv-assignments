@@ -1,3 +1,6 @@
+# Dataset path for both notebooks
+dataset/
+
 # Apple Desktop Service
 *.DS_Store
 
