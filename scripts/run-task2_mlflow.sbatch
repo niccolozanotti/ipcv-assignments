@@ -41,7 +41,7 @@ export LD_LIBRARY_PATH="$EXT_BINS/graphviz/usr/lib:$LD_LIBRARY_PATH"
 echo "Starting execution of $NOTEBOOK..."
 echo "Output will be saved to $OUTPUT_NOTEBOOK"
 
-uv run -env-file "$PROJECT_DIR/.env" jupyter nbconvert \
+uv run --env-file "$PROJECT_DIR/.env" jupyter nbconvert \
     --to notebook \
     --execute "$PROJECT_DIR/$NOTEBOOK" \
     --output "$PROJECT_DIR/$OUTPUT_NOTEBOOK"
