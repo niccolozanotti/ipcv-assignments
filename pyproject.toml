@@ -30,7 +30,6 @@ assignment2 = [
     "matplotlib>=3.10.8",
     "numpy>=2.4.2",
     "pandas>=3.0.0",
-    "pip>=26.0.1",
     "torch>=2.10.0",
     "torchvision>=0.25.0",
 ]

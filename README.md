@@ -9,7 +9,7 @@ This repository contains the solution to the 2 assignments for the [course](http
 
 ```sh
 # Clone repository
-git clone https://github.com/niccolozanotti/ipcv-assignments
+git clone -b main --single-branch https://github.com/niccolozanotti/ipcv-assignments
 cd ipcv-assignments
 
 # Create virtual environment
