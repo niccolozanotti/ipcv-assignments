@@ -20,7 +20,7 @@ COMMIT_HASH=$(git rev-parse --short HEAD)
 
 # Check if git command worked, fallback to "unknown" if not
 if [ -z "$COMMIT_HASH" ]; then
-    COMMIT_HASH="unknown"
+    COMMIT_HASH="unknown_commit"
 fi
 
 echo "Running on commit: $COMMIT_HASH"
@@ -41,6 +41,8 @@ export LD_LIBRARY_PATH="$EXT_BINS/graphviz/usr/lib:$LD_LIBRARY_PATH"
 echo "Starting execution of $NOTEBOOK..."
 echo "Output will be saved to $OUTPUT_NOTEBOOK"
 
+# $PROJECT_DIR/.env defines the mlflow credentials:
+# MLFLOW_TRACKING_USERNAME, MLFLOW_TRACKING_PASSWORD
 uv run --env-file "$PROJECT_DIR/.env" jupyter nbconvert \
     --to notebook \
     --execute "$PROJECT_DIR/$NOTEBOOK" \
