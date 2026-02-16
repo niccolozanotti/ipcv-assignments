@@ -25,7 +25,7 @@ fi
 
 echo "Running on commit: $COMMIT_HASH"
 
-export NOTEBOOK="assignment2_mlflow.ipynb"
+export NOTEBOOK="assignment2_mlflow_modular.ipynb"
 export OUTPUT_NOTEBOOK="assignment2_${COMMIT_HASH}.ipynb"
 
 # uv binary (0.10)
